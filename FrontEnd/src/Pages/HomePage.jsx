@@ -1,6 +1,6 @@
 import video from '../assets/video.mp4'; 
 import Example from '../NavBar';
-import LoginPage from '../Login';
+import Login from '../Login';
 
 
 const HomePage = () => {
