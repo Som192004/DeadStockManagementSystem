@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import Layout from "./Pages/Layout";  // Adjust the path if necessary
 import Swal from 'sweetalert2';
 
@@ -6,6 +7,7 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +26,9 @@ function Login() {
         text: 'Login successful!',
         icon: 'success',
         confirmButtonText: 'OK'
+      }).then(() => {
+        localStorage.setItem('isAuthenticated', 'true'); // Set authentication in local storage
+        navigate('/homepage'); // Redirect to the homepage
       });
       setEmail('');
       setPassword('');
