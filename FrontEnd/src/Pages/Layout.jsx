@@ -1,6 +1,6 @@
 // Layout.js
 import React from 'react';
-import video from "../assets/video.mp4";  // Adjust the path if necessary
+import video from "../assets/video1.mp4";  // Adjust the path if necessary
 
 const Layout = ({ children }) => {
   return (
