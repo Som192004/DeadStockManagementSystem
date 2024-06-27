@@ -1,4 +1,3 @@
-// Layout.js
 import React from 'react';
 import video from "../assets/video1.mp4";  // Adjust the path if necessary
 
@@ -19,8 +18,10 @@ const Layout = ({ children }) => {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="relative z-10 text-white text-center mb-8">
-        <h1 className='text-4xl font-bold'>Welcome to the PICT Lab Administrator System</h1>
+      <div className="relative z-10 text-center mb-8">
+        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 animate-fade-in shadow-lg">
+          Welcome to PICT Lab Administrator System
+        </h1>
       </div>
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md relative z-10">
         {children}

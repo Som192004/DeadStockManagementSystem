@@ -12,8 +12,8 @@ app.use(cors());
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',  // Replace with your MySQL host if different
-  port: 1000,         // Specify your custom MySQL port here
+  host: 'localhost',
+  port: 1000, // Specify your custom MySQL port here
   user: 'root',
   password: 'RAHUL#2004',
   database: 'deadstockmanagementsystem'
@@ -21,7 +21,8 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
   if (err) {
-    throw err;
+    console.error('Database connection failed:', err);
+    return;
   }
   console.log('MySQL connected...');
 });
