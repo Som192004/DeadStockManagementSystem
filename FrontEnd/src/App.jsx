@@ -10,6 +10,7 @@ import ProtectedRoute from './ProtectedRoute';
 import Homepage from './Pages/HomePage'; // Adjust the path if necessary
 import './App.css';
 import Calendar from './Pages/Calender'; // Corrected spelling
+import 'animate.css';
 
 function App() {
   return (
