@@ -24,7 +24,7 @@ function Register() {
       setMessage('Registration successful!');
       navigate('/'); // Redirect to the login page
     } else {
-      setMessage('Registration failed.');
+      setMessage('This Email is Already having an account');
     }
   };
 
